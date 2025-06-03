@@ -1,0 +1,26 @@
+{
+  "description": "R_CMD to switch input sources if press alone",
+  "manipulators": [
+    {
+      "from": {
+        "key_code": "right_command"
+      },
+      "to": [
+        {
+          "key_code": "right_command"
+        }
+      ],
+      "to_if_alone": [
+        {
+          "key_code": "spacebar",
+          "lazy": true,
+          "modifiers": [
+            "left_control"
+          ],
+          "repeat": false
+        }
+      ],
+      "type": "basic"
+    }
+  ]
+}
